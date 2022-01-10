@@ -1,4 +1,4 @@
-package controller;
+package com.example.demo.controller;
 
 
 import org.springframework.http.MediaType;
@@ -14,7 +14,8 @@ import java.io.IOException;
 public class TestController {
 
 
-    @GetMapping(value = "/", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
+    // GET localhost:9000/test/data
+    @GetMapping(value = "/data", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
     @ResponseBody
     private String test(
     ) throws IOException {
